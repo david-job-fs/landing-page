@@ -1,13 +1,17 @@
 # Landing Page Project
+A simple website for the Udacity Front End Nanodegree Program
 
 ## Table of Contents
 
-* [Instructions](#instructions)
+* [Getting Started](#getting-started)
+* [Description](#description)
 
-## Instructions
+## Getting Started
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+To launch this project, simply clone the repo and open the index.html file in the browser.
 
-To get started, open `js/app.js` and start building out the app's functionality
+## Description
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+This project is build on using HTML, CSS and JavaScript. 
+It implements DOM manipulation to build a navigation and shows which section is in the viewport.
+

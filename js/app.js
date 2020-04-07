@@ -13,14 +13,11 @@
  * 
 */
 
-/**
- * Define Global Variables
- * 
-*/
+// Define Global Variables
 const sections = document.getElementsByTagName('section');
 const navigation = document.getElementById('navbar__list');
 
-// build the navighation items and links
+// Build the navigation items and links
 for (let section of sections) {
 	const sectionTitle = section.querySelector('h2')
 
@@ -37,7 +34,6 @@ for (let section of sections) {
     navigation.appendChild(listItem);
 
 }
-
 
 // EventListener is adding class 'active' to section and navigation when it is in viewport
 window.addEventListener('DOMContentLoaded', () => {
@@ -61,3 +57,21 @@ window.addEventListener('DOMContentLoaded', () => {
 	});
 	
 });
+
+// Back to top function
+const toTopButton = document.getElementById("toTop");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    toTopButton.style.display = "block";
+  } else {
+    toTopButton.style.display = "none";
+  }
+}
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

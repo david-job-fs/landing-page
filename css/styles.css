@@ -121,6 +121,27 @@ section {
     }
 }
 
+/* Back to top button */
+#toTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#toTop:hover {
+    color: red;
+    background-color: #fff;
+}
+
 /* Footer Styles */
 .page__footer {
     background: #000;
